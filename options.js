@@ -1,15 +1,14 @@
 // Saves options to chrome.storage
 function saveOptions() {
-    var cut = document.getElementById('cut').value;
-    var paste = document.getElementById('paste').value;
-    var url = document.getElementById('url').value.split('\n');
+    let cut = document.getElementById('cut').value,
+        paste = document.getElementById('paste').value,
+        url = document.getElementById('url').value.split('\n');
     chrome.storage.sync.set({
         cut: cut,
         paste: paste,
         url: url
     }, function() {
-        // Update status to let user know options were saved.
-        var status = document.getElementById('status');
+        let status = document.getElementById('status');
         status.textContent = 'Options saved.';
         setTimeout(function() {
             status.textContent = '';
