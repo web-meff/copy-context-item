@@ -1,0 +1,19 @@
+{
+  "name": "Custom Copy Item",
+  "version": "0.0.1",
+  "description": "Copy Item in Context Menu",
+  "permissions": ["contextMenus", "storage"],
+  "background": {
+    "scripts": ["sample.js"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+	"16": "icon-16.png",
+	"48": "icon-48.png",
+	"128": "icon-128.png"
+  },
+  "manifest_version": 2
+}
