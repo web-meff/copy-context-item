@@ -1,7 +1,7 @@
 let data = {
-	cut: '.seosf.tech',
+	cut: 'google.com',
 	paste: '',
-	url: ['*://*.seosf.tech/*']
+	url: ['*://*.google.com/*']
 };
 
 function init() {
